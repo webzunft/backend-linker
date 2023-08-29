@@ -31,6 +31,15 @@ If you have a string that is also part of another string, then the plugin would 
 E.g., you have a line for "Plugin > Settings > Options" and "Settings > Options".
 Note that the ">" and other special characters could be sanitized to look like "&gt;". Adding two lines, one with an escaped, and another with an unescaped version, helps.
 
+Here is an example of how the value could look like:
+
+```
+Plugins &gt; Add New &gt; Upload Plugin|wp-admin/plugin-install.php
+Plugins > Add New > Upload Plugin|wp-admin/plugin-install.php
+Settings > Image Sources|wp-admin/options-general.php?page=isc-settings
+Settings &gt; Image Sources|wp-admin/options-general.php?page=isc-settings
+```
+
 Add a URL into the _Backend Linker URL to more details_ to link to more details in the footer notes. If you leave this empty, no link will show up. 
 
 ## Additional notes
